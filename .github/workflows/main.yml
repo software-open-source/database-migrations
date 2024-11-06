@@ -22,7 +22,10 @@ jobs:
         java-version: '21'
         distribution: 'temurin'
         architecture: x64
-        settings: .github/workflows/maven/settings.xml
+        server-id: github
+        server-username: richard-vu
+        server-password: ${{secrets.SOFTWARE_OPEN_SOURCE_TOKEN}}
+        
     - name: Build with Maven
       run: mvn package -Dmaven.test.skip
 
