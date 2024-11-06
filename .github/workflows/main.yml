@@ -22,6 +22,7 @@ jobs:
         java-version: '21'
         distribution: 'temurin'
         architecture: x64
+        settings: .github/workflows/maven/settings.xml
     - name: Build with Maven
       run: mvn package -Dmaven.test.skip
 
