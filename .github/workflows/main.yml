@@ -25,6 +25,10 @@ jobs:
         server-id: github
         server-username: richard-vu
         server-password: ${{secrets.SOFTWARE_OPEN_SOURCE_TOKEN}}
+    - name: Log Settings.xml
+      run: cat ~/.m2/settings.xml
+    - name: Build with Maven
+      run: mvn clean package -s ~/.m2/settings.xml
         
     - name: Build with Maven
       run: mvn package -Dmaven.test.skip
