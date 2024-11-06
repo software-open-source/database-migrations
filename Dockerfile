@@ -1,4 +1,4 @@
 FROM openjdk:21
 EXPOSE 8080
-COPY target/application.jar application.jar
-ENTRYPOINT ["java","-jar","/application.jar"]
+COPY target/database-migrations.jar database-migrations.jar
+ENTRYPOINT ["java","-jar","/database-migrations.jar"]
