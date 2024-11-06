@@ -25,13 +25,14 @@ jobs:
         server-id: github
         server-username: richard-vu
         server-password: ${{secrets.SOFTWARE_OPEN_SOURCE_TOKEN}}
-    - name: Log Settings.xml
-      run: cat ~/.m2/settings.xml
-    - name: Build with Maven
-      run: mvn clean package -s ~/.m2/settings.xml
+    
+    - name: Copy settings.xml  
+      run: |  
+          mkdir -p ~/.m2  
+          cp .github/workflows/maven/settings.xml ~/.m2/settings.xml
         
     - name: Build with Maven
-      run: mvn package -Dmaven.test.skip
+      run: mvn clean package -Dmaven.test.skip=true --settings settings.xml
 
     - name: Build & push Docker image
       uses: mr-smithers-excellent/docker-build-push@v5
