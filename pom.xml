@@ -17,7 +17,7 @@
 	<name>database-migrations</name>
 	<description>Demo project for Spring Boot</description>
 
-	<url>https://github.com/software-open-source/common</url>
+	<url>https://github.com/software-open-source/database-migrations</url>
 
 	<licenses>
 		<license>
@@ -39,10 +39,10 @@
 	</developers>
 
 	<scm>
-		<connection>scm:git:https://github.com/software-open-source/spring-framework-essential.git</connection>
-		<developerConnection>scm:git:git@github.com:software-open-source/spring-framework-essential.git</developerConnection>
+		<connection>scm:git:https://github.com/software-open-source/database-migrations.git</connection>
+		<developerConnection>scm:git:git@github.com:software-open-source/database-migrations.git</developerConnection>
 		<tag>HEAD</tag>
-		<url>https://github.com/software-open-source/spring-framework-essential</url>
+		<url>https://github.com/software-open-source/database-migrations</url>
 	</scm>
 
 	<properties>
