@@ -113,11 +113,11 @@
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 
-		<!-- <dependency>
+		<dependency>
 			<groupId>org.software.open.source</groupId>
 			<artifactId>common</artifactId>
 			<version>0.0.3</version>
-		</dependency> -->
+		</dependency>
 	</dependencies>
 
 	<build>
